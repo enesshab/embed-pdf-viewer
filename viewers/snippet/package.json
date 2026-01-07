@@ -3,6 +3,13 @@
   "version": "2.1.1",
   "main": "dist/embedpdf.js",
   "types": "dist/embedpdf.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/embedpdf.d.ts",
+      "import": "./dist/embedpdf.js",
+      "default": "./dist/embedpdf.js"
+    }
+  },
   "license": "MIT",
   "type": "module",
   "files": [

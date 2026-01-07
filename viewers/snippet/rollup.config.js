@@ -42,6 +42,7 @@ export default [
     output: {
       dir: 'dist',
       format: 'esm',
+      entryFileNames: 'embedpdf.js',
       sourcemap: false,
     },
     plugins: [
