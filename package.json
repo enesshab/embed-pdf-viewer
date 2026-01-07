@@ -1,9 +1,24 @@
 {
-  "name": "embedpdf",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@embedpdf/snippet",
+  "private": false,
+  "version": "2.1.1",
   "packageManager": "pnpm@10.4.0",
   "license": "MIT",
+  "type": "module",
+  "main": "viewers/snippet/dist/embedpdf.js",
+  "types": "viewers/snippet/dist/embedpdf.d.ts",
+  "exports": {
+    ".": {
+      "types": "./viewers/snippet/dist/embedpdf.d.ts",
+      "import": "./viewers/snippet/dist/embedpdf.js",
+      "default": "./viewers/snippet/dist/embedpdf.js"
+    }
+  },
+  "files": [
+    "viewers/snippet/dist",
+    "viewers/snippet/README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "dev": "turbo run dev --parallel",
     "dev:vanilla": "pnpm --filter @embedpdf/example-vanilla run dev",
